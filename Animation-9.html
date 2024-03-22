@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Animation-09</title>
+  <style>
+    body >main >section>section {
+      width: 99%;
+      height: 60vh;
+      position: absolute;
+      bottom: 0;
+      box-sizing: border-box;
+      overflow: hidden;
+    }
+    body >main >section{
+      width: 100%;
+      height: 99vh;
+      background:url("assets/sky.jpg");
+      background-size: cover;
+      background-position: center;
+
+    }
+    body >main >section>section>section:first-child{
+      width: 200%;
+      height: 40vh;
+      background:url("assets/city.png");
+      background-size: cover;
+      background-position: center;
+      animation-name: city;
+      animation-duration: 1s;
+      animation-iteration-count: infinite;
+    }
+    body >main >section>section>section:last-child{
+      width: 200%;
+      height: 40vh;
+      background:url("assets/road.jpg");
+      background-size: cover;
+      background-position: center;
+      animation-name: road;
+      animation-duration: 1s;
+      animation-iteration-count: infinite;
+      position: relative;
+    }
+    body >main >section>div:nth-child(2){
+      background:url("assets/car.png");
+      background-size: cover;
+      background-position: center;
+      width: 483px;
+      height: 200px;
+      position: absolute;
+      margin: auto;
+      top: 50vh;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
+    body >main>section>div:nth-child(3){
+      width: 97px;
+      height: 97px;
+      background: url("assets/wheel.png");
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      top: 74vh;
+      left: 55vw;
+    }
+    body >main>section>div:nth-child(4){
+      width: 97px;
+      height: 97px;
+      background:url("assets/wheel.png");
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      top: 60vh;
+      left: 35vw;
+    }
+    body >main>section> div + div {
+      width: 50px;
+      height: 50px;
+      border-radius: 100%;
+      animation-name: rotate;
+      animation-duration: 1s;
+      animation-iteration-count: infinite;
+    }
+
+    @keyframes rotate {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+    @keyframes city {
+      0% {
+        left: 0;
+      }
+      100% {
+        left: -100vw;
+      }
+    }
+    @keyframes road {
+      0% {
+        left: 0;
+      }
+      100% {
+        left: -100vw;
+      }
+    }
+  </style>
+</head>
+<body>
+<main>
+  <section id="section01">
+    <section id="section02">
+      <section></section>
+      <section></section>
+    </section>
+    <div></div>
+    <div></div>
+    <div></div>
+  </section>
+</main>
+</body>
+</html>

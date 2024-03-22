@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Animation-08</title>
+
+    <style>
+        main{
+            width: 50vw;
+            height: 50vh;
+            border: 3px solid white;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            margin: auto;
+            display: flex;
+
+            overflow: hidden;
+        }
+
+        main>section{
+            display: flex;
+            position: absolute;
+            animation-name: anim;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+
+        main>section>div{
+            width: 50vw;
+            height: 50vh;
+
+        }
+
+        main>section>div:first-child{
+            background-image: url("https://t3.ftcdn.net/jpg/05/85/86/44/360_F_585864419_kgIYUcDQ0yiLOCo1aRjeu7kRxndcoitz.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        main>section>div:nth-child(2){
+            background-image: url("https://images.pexels.com/photos/36717/amazing-animal-beautiful-beautifull.jpg?cs=srgb&dl=pexels-pixabay-36717.jpg&fm=jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        main>section>div:nth-child(3){
+            background-image: url("https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        main>section>div:last-child{
+            background-image: url("https://img.freepik.com/free-photo/snowy-mountain-peak-starry-galaxy-majesty-generative-ai_188544-9650.jpg?size=626&ext=jpg&ga=GA1.1.2082370165.1710547200&semt=sph");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+
+        @keyframes anim {
+            0%, 20%{
+                transform:translateX(0%) ;
+            }
+            25%,45%{
+                transform: translateX(-25%);
+            }
+            50%,70%{
+                transform: translateX(-50%);
+            }
+            75%,100%{
+                transform: translateX(-75%);
+            }
+        }
+
+    </style>
+
+</head>
+<body>
+<main>
+<section>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</section>
+</main>
+</body>
+</html>

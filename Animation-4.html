@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Animation-04</title>
+  <style>
+    div{
+        width: 300px;
+        height: 300px;
+        aspect-ratio: 1/1;
+        border: 3px solid red;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        margin: auto;
+        position: absolute;
+        animation: my-animation 3s infinite linear;
+    }
+    @keyframes my-animation {
+        from{
+            transform: rotate(0deg);
+        }
+        to{
+            transform: rotate(360deg);
+        }
+
+    }
+
+  </style>
+</head>
+<body>
+  <div></div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Animation-05</title>
+  <style>
+    div{
+      width: 500px;
+      aspect-ratio: 1/1;
+
+      animation-duration:5s;
+      animation-name:anim;
+      animation-iteration-count:infinite;
+      /*animation-delay:1s;*/
+      /*animation-direction:reverse ;*/
+      /*animation-direction: alternate;*/
+      /*animation-direction: alternate-reverse;*/
+      animation-timing-function:ease-in-out ;
+      animation-play-state: running;
+
+    }
+    @keyframes anim {
+      0%,20%{
+        background-image: url("https://st.depositphotos.com/1000152/1909/i/450/depositphotos_19091863-stock-photo-forest.jpg");
+      }
+      25%,45%{
+        background-image: url("https://wallpapers.com/images/featured/forest-pictures-ghluxfda78g0i0ap.jpg");
+      }
+      50%,70%{
+        background-image: url("https://loveincorporated.blob.core.windows.net/contentimages/gallery/a9fb36be-f130-4f84-ab3b-363116c9c5df-Zhangjiajie_China.jpg");
+      }
+      75%,90%{
+        background-image: url("https://www.travelandleisure.com/thmb/Ne05bVVgbqpA8FQIvI4vCifNUxA=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/hallerbos-forest-halle-belgium-2-BEAUTFORESTS0721-4ff5b556613e4814b5b7165f8851de39.jpg");
+      }
+      100%{
+        background-image: url("https://www.travelandleisure.com/thmb/Ne05bVVgbqpA8FQIvI4vCifNUxA=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/hallerbos-forest-halle-belgium-2-BEAUTFORESTS0721-4ff5b556613e4814b5b7165f8851de39.jpg");
+      }
+    }
+
+  </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>
